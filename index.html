@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Ginelle DeAntonis | Home</title>
-	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Muli:300,800" rel="stylesheet">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/style.css">
 
@@ -11,54 +11,134 @@
 <body>
 
 	<header>
-		<img src="images/gd-logo.svg" alt="Logo">
+		<div class="logo">
+			<a href="#"><img src="images/gd-logo.svg" alt="Logo"></a>
+		</div>
 		<nav>
-			<ul>
+			<a class="hamburger" href=""><i class="fa fa-bars fa-2x"></i></a>
+			<ul id="dropdown">
 				<li><a href="#about">Work</a></li>
 				<li><a href="#gallery">About</a></li>
-				<li><a href="blog.html">Resume</a></li>
+				<li><a href="#blog.html">Resume</a></li>
 				<li><a href="#contact">Contact</a></li>
 			</ul>
 		</nav>
 	</header>
 	
-	<section id="gallery">
-		<div class="img-wrap">
-			<div class="grid">
-				<img src="images/gallery_1.jpg" alt="">
-				<img src="images/gallery_1.jpg" alt="">
-				<img src="images/gallery_1.jpg" alt="">
-				<img src="images/gallery_1.jpg" alt="">
-				<img src="images/gallery_1.jpg" alt="">
-				<img src="images/gallery_1.jpg" alt="">
-				<img src="images/gallery_1.jpg" alt="">
-				<img src="images/gallery_1.jpg" alt="">
-				<img src="images/gallery_1.jpg" alt="">
+	<section class="gallery">
+		<div class="grid-wrapper">
+			<div>
+				<a href="#">
+					<span class="overlay">
+					<span class="large-text"><b>Yesware</b></span>
+					<hr>
+					<span class="small-text">Branding</span>
+					</span>
+					<img src="images/yesware-thumb@2x.jpg" alt="">
+				</a>
+			</div>
+			<div>
+				<a href="#">
+					<span class="overlay">
+					<span class="large-text"><b>Jankele</b></span>
+					<hr>
+					<span class="small-text">Lookbook</span>
+					</span>
+					<img src="images/jankele-thumb@2x.jpg" alt="">
+				</a>
+			</div>
+			<div>
+				<a href="#">
+					<span class="overlay">
+					<span class="large-text"><b>Blade</b></span>
+					<hr>
+					<span class="small-text">Logo</span>
+					</span>
+					<img src="images/blade-thumb@2x.jpg" alt="">
+				</a>
+			</div>
+			<div>
+				<a href="#">
+					<span class="overlay">
+					<span class="large-text"><b>Sweetcakes</b></span>
+					<hr>
+					<span class="small-text">Branding</span>
+					</span>
+					<img src="images/sweetcakes-thumb@2x.jpg" alt="">
+				</a>
+			</div>
+			<div>
+				<a href="#">
+					<span class="overlay">
+					<span class="large-text"><b>First Act</b></span>
+					<hr>
+					<span class="small-text">Product & Packaging</span>
+					</span>
+					<img src="images/first-act-thumb@2x.jpg" alt="">
+				</a>
+			</div>
+			<div>
+				<a href="#">
+					<span class="overlay">
+					<span class="large-text"><b>La Luna</b></span>
+					<hr>
+					<span class="small-text">Logo</span>
+					</span>
+					<img src="images/la-luna-thumb@2x.jpg" alt="">
+				</a>
+			</div>
+			<div>
+				<a href="#">
+					<span class="overlay">
+					<span class="large-text"><b>Wanderlust</b></span>
+					<hr>
+					<span class="small-text">Logo</span>
+					</span>
+					<img src="images/wanderlust-thumb@2x.jpg" alt="">
+				</a>
+			</div>
+			<div>
+				<a href="#">
+					<span class="overlay">
+					<span class="large-text"><b>Wedding Program</b></span>
+					<hr>
+					<span class="small-text">Print</span>
+					</span>
+					<img src="images/wedding-thumb@2x.jpg" alt="">
+				</a>
+			</div>
+			<div>
+				<a href="#">
+					<span class="overlay">
+					<span class="large-text"><b>Doodle Book</b></span>
+					<hr>
+					<span class="small-text">Drawings</span>
+					</span>
+					<img src="images/drawings-thumb@2x.jpg" alt="">
+				</a>
 			</div>
 		</div>
 	</section>
 
 	<footer>
-		<div class="contact-wrapper">
+		<div class="footer-wrapper">
 			<div class="about">
 				<h1>Hello!</h1>
-				<p class="large-text">I’m Ginelle. I’m a desiger and developer currently residing in good ol’ San Francisco. Feel free to download my <a href="#">resume</a> or contact me by <a href="">email</a>.</p>
+				<p>I’m Ginelle. I’m a designer and developer currently residing in good ol’ San Francisco. Feel free to download my <a href="#">resume</a> or contact me by <a href="">email</a>.</p>
+				<div>
+					<a href=""><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a>
+					<a href=""><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a>
+					<a href=""><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+				</div>
 			</div>
-			<div class="contact-form">
+			<div class="contact">
 				<p class="large-text"><b>Get in touch</b></p>
 				<form action="#" method="post">
 					<input type="text" name="fullName" placeholder="Full Name">
 					<input type="email" name="email" placeholder="Email Address">
-					<textarea></textarea>
+					<textarea class="boxsizing-border" placeholder="What's on your mind?"></textarea>
 					<button class="submit">Submit</button>
 				</form>
-			</div>
-		</div>
-		<div>
-			<div class="social-links">
-				<a href=""><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
-				<a href=""><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
-				<a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
 			</div>
 		</div>
 	</footer>
