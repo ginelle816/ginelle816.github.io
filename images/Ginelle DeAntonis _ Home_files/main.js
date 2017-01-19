@@ -90,8 +90,9 @@ $('form').on('submit', function (e) {
 
 	// If all fields are filled
 	if (fullName === "",email === "",message === "") {
+
 	} else {
-		// Change button message temporarily
+		// Change button message on submit
 	    var that = this;
 	    var text = $(this).html();
 	    $('form button').html("&#x2713; You're all set!");
@@ -99,7 +100,7 @@ $('form').on('submit', function (e) {
 	        //fade back
 	        $(that).html(text);
 	    }, 5000);
-
+		// $('form button').html("&#x2713; You're all set!");
 		// Reset the form
 		$('form').trigger('reset');
 	}
