@@ -21,6 +21,9 @@ a {
 	cursor: pointer;
 }
 
+#main-content {
+	display: none;
+}
 
 
 /* ----------------------------------------
@@ -357,8 +360,6 @@ Konami
 	transition: 1s ease-in-out;
 	transform: rotate(360deg);
 }
-
-
 
 
 
