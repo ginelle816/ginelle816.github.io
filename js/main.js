@@ -30,6 +30,15 @@ $('.hamburger').on('click', function (e) {
     // Bonus: If the user clicks anywhere outside of the menu slide the menu up
 });
 
+// Get regular nav to come back after screen resize
+// Note: can't get it to work after #dropdown is slid up
+var windowWidth = $(window).width();
+if (windowWidth > 500) {
+	$('nav ul').show();
+} else {
+	$('nav ul').hide();
+}
+
 
 
 
