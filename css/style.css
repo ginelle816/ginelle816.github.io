@@ -67,28 +67,44 @@ Header
 
 header {
 	max-width: 984px;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: row;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
 	margin: 0 auto;
-	justify-content: space-between;
-	padding: 15px 8px 8px 8px;
-	-webkit-flex-flow: row wrap; 
-	flex-flow: row wrap;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	padding: 15px 8px 8px 8px; 
+	-ms-flex-flow: row wrap; 
+	    flex-flow: row wrap;
 }
 
 header img {
 	width: 90px;
+	-webkit-transition: all .3s ease-in-out;
 	transition: all .3s ease-in-out;
 }
 
 header img:hover {
-	transform: scale(1.07);
+	-webkit-transform: scale(1.07);
+	        transform: scale(1.07);
 }
 
 nav {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
-	justify-content: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 }
 
 nav ul {
@@ -108,6 +124,7 @@ nav li a {
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	display: inline-block;
+	-webkit-transition: all .3s ease-in-out;
 	transition: all .3s ease-in-out;
 }
 
@@ -120,12 +137,17 @@ nav li a:after {
 	display:block;
 	content: '';
 	border-bottom: solid 1px black;  
-	transform: scaleX(0.0001);  
-	transition: transform .3s ease-in-out;
+	-webkit-transform: scaleX(0.0001);  
+	        transform: scaleX(0.0001);  
+	-webkit-transition: -webkit-transform .3s ease-in-out;  
+	transition: -webkit-transform .3s ease-in-out;  
+	transition: transform .3s ease-in-out;  
+	transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out;
 }
 
 nav a:hover:after {
-	transform: scaleX(1);
+	-webkit-transform: scaleX(1);
+	        transform: scaleX(1);
 }
 
 .hamburger {
@@ -147,13 +169,15 @@ button {
 	text-transform: uppercase;
 	font-size: 12px;
 	letter-spacing: 1.2px;
+	-webkit-transition: all .3s ease-in-out;
 	transition: all .3s ease-in-out;
 }
 
 button:hover {
 	background-color: #44545E;
 	color: white;
-	transform: scale(1.04);
+	-webkit-transform: scale(1.04);
+	        transform: scale(1.04);
 }
 
 /* ----------------------------------------
@@ -217,9 +241,9 @@ Gallery
 .grid-wrapper {
 	display: -ms-flexbox;
 	-ms-flex-wrap: wrap;
-	-ms-flex-direction: column;
-	-webkit-flex-flow: row wrap; 
-	flex-flow: row wrap; 
+	-ms-flex-direction: column; 
+	-ms-flex-flow: row wrap; 
+	    flex-flow: row wrap; 
 	display: -webkit-box;
 	display: flex;
 	position: relative;
@@ -235,11 +259,13 @@ Gallery
 	position: relative;
 	display: block;
 	max-width: 100%;
+	-webkit-transition: all .3s ease-in-out;
 	transition: all .3s ease-in-out;
 }
 
 .grid-wrapper article:hover {
-	transform: scale(1.02);
+	-webkit-transform: scale(1.02);
+	        transform: scale(1.02);
 }
 
 .overlay {
@@ -251,18 +277,25 @@ Gallery
 	height: 100%;
 	text-align: center;
 	opacity: 0;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
 	-webkit-transition: all 0.5s ease-in-out;
-	-moz-transition: all 0.5s ease-in-out;
-	-o-transition: all 0.5s ease-in-out;
 	transition: all 0.5s ease-in-out;
 	z-index: 10;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
-	justify-content: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 }
 
 .overlay-hover {
 	opacity: 1;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 }
 
 .overlay-hover hr.divider {
@@ -276,6 +309,7 @@ hr.divider {
 	height: 1px;
 	background-color: white;
 	width: 0;
+	-webkit-transition: all .3s ease-in-out;
 	transition: all .3s ease-in-out;
 }
 
@@ -321,13 +355,20 @@ footer a {
 }
 
 .footer-wrapper {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 	max-width: 984px;
-	margin: 0 auto;
-	-webkit-flex-flow: row wrap; 
-	flex-flow: row wrap; 
+	margin: 0 auto; 
+	-ms-flex-flow: row wrap; 
+	    flex-flow: row wrap; 
 }
 
 #about {
@@ -345,11 +386,13 @@ footer a {
 
 footer i {
 	margin: 12px 6px 0 0;
+	-webkit-transition: all .3s ease-in-out;
 	transition: all .3s ease-in-out;
 }
 
 footer i:hover {
-	transform: scale(1.15);
+	-webkit-transform: scale(1.15);
+	        transform: scale(1.15);
 }
 
 /* ----------------------------------------
@@ -357,8 +400,10 @@ Konami
 ------------------------------------------- */
 
 .img-effect {
+	-webkit-transition: 1s ease-in-out;
 	transition: 1s ease-in-out;
-	transform: rotate(360deg);
+	-webkit-transform: rotate(360deg);
+	        transform: rotate(360deg);
 }
 
 
@@ -412,6 +457,7 @@ Media Styles
 		text-align: center;
 		text-decoration: none;
 		color: #999;
+		-webkit-transition: all .3s ease-in-out;
 		transition: all .3s ease-in-out;
 		margin: 0 auto;
 	}
