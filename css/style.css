@@ -279,7 +279,7 @@ Project
 .project {
 	max-width: 800px;
 	text-align: center;
-	margin: 50px auto 200px auto;
+	margin: 35px auto 200px auto;
 	padding: 8px;
 }
 
@@ -352,6 +352,11 @@ Konami
 .img-effect {
 	transition: 1s ease-in-out;
 	transform: rotate(360deg);
+}
+
+
+#main-content {
+	display: none;
 }
 
 

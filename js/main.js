@@ -100,6 +100,15 @@ $('form').on('submit', function (e) {
 
 
 
+// Fade in everything on page load
+
+$(document).ready(function() {
+    $('#main-content').fadeIn(1500);
+});
+
+
+
+
 // KONAMI!
 
 var kkeys = [];
