@@ -203,18 +203,14 @@ textarea {
 	height: 100px;
 }
 
-input::-webkit-input-placeholder {
-	color: #999;
-}
-input:focus::-webkit-input-placeholder {
-	color: black;
-}
-
+input::-webkit-input-placeholder,
 textarea::-webkit-input-placeholder {
 	color: #999;
 }
+input:focus::-webkit-input-placeholder,
 textarea:focus::-webkit-input-placeholder {
 	color: black;
+	transition: all .7s ease-in-out;
 }
 
 input[type=text],
