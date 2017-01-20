@@ -116,7 +116,8 @@ nav li {
 	padding-left: 30px;
 }
 
-nav li a {
+nav li a,
+.navigate a {
 	font-size: 11px;
 	line-height: 20px;
 	text-decoration: none;
@@ -128,12 +129,14 @@ nav li a {
 	transition: all .3s ease-in-out;
 }
 
-nav li a:hover {
+nav li a:hover,
+.navigate a:hover {
 	color: black;
 	font-size: 12px;
 }
 
-nav li a:after {
+nav li a:after,
+.navigate a:after {
 	display:block;
 	content: '';
 	border-bottom: solid 1px black;  
@@ -145,7 +148,8 @@ nav li a:after {
 	transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out;
 }
 
-nav a:hover:after {
+nav a:hover:after,
+.navigate a:hover:after {
 	-webkit-transform: scaleX(1);
 	        transform: scaleX(1);
 }
@@ -320,7 +324,7 @@ Project
 .project {
 	max-width: 800px;
 	text-align: center;
-	margin: 22px auto 200px auto;
+	margin: 22px auto 100px auto;
 	padding: 8px;
 }
 
@@ -339,6 +343,23 @@ Project
 	width: 100px;
 	margin: 2px auto 7px auto;
 }
+
+.navigate {
+	padding: 8px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-ms-flex-flow: row wrap; 
+	    flex-flow: row wrap;
+}
+
 
 /* ----------------------------------------
 Footer
