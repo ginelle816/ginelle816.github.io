@@ -483,6 +483,8 @@ Media Styles
 
 	.hamburger:hover {
 		color: black;
+		-webkit-transform: scale(1.06);
+	        transform: scale(1.06);
 	}
 
 	nav ul {
