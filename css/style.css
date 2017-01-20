@@ -227,6 +227,7 @@ textarea,
 
 .error {
 	border: 2px solid #F95758;
+	transition: all .3s ease-in-out;
 }
 
 /* ----------------------------------------
