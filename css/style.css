@@ -9,7 +9,8 @@ body {
 	line-height: 26px;
 	color: black;
 	margin: 0;
-	letter-spacing: .5px;
+	letter-spacing: .4px;
+	word-spacing: .4px;
 }
 
 img {
