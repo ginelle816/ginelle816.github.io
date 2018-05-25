@@ -154,11 +154,11 @@
 				</div>
 				<div id="contact">
 					<p class="large-text"><b>Get in touch</b></p>
-					<form action="#" method="post">
-						<input type="text" name="fullName" id="nameInput" placeholder="Full Name">
-						<input type="email" name="email" id="emailInput" placeholder="Email Address">
-						<textarea class="boxsizing-border" name="message" id="messageInput" placeholder="What's on your mind?"></textarea>
-						<button type="submit">Submit</button>
+					<form id="contact-form" method="post" action="contact-form.php" >
+						<input name="fullName" type="text" class="form-control" id="nameInput" placeholder="Full Name" required>
+						<input name="email" type="email" class="form-control" id="emailInput" placeholder="Email Address" required>
+						<textarea name="message" class="form-control boxsizing-border" id="messageInput" placeholder="What's on your mind?" required></textarea>
+						<input type="submit" class="form-control submit" value="Submit">
 					</form>
 				</div>
 			</div>

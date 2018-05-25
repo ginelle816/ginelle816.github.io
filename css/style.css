@@ -159,6 +159,10 @@ nav a:hover:after,
 	display: none;
 }
 
+form .submit:hover {
+	cursor: pointer;
+}
+
 /* ----------------------------------------
 Buttons
 ------------------------------------------- */
