@@ -3,7 +3,7 @@ Base Styles
 ------------------------------------------- */
 
 body {
-	font-family: 'Muli', sans-serif;
+	font-family: 'Barlow Semi Condensed', sans-serif;
 	font-weight: 300;
 	font-size: 14px;
 	line-height: 26px;
@@ -79,21 +79,21 @@ header {
 	-webkit-box-pack: justify;
 	    -ms-flex-pack: justify;
 	        justify-content: space-between;
-	padding: 15px 8px 8px 8px; 
+	padding: 35px 0 20px 0; 
 	-ms-flex-flow: row wrap; 
 	    flex-flow: row wrap;
 }
 
 header img {
-	width: 90px;
-	-webkit-transition: all .3s ease-in-out;
-	transition: all .3s ease-in-out;
+	width: 250px;
+	/*-webkit-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;*/
 }
 
-header img:hover {
+/*header img:hover {
 	-webkit-transform: scale(1.07);
 	        transform: scale(1.07);
-}
+}*/
 
 nav {
 	display: -webkit-box;
@@ -122,9 +122,9 @@ nav li a,
 	font-size: 11px;
 	line-height: 20px;
 	text-decoration: none;
-	color: #999;
+	color: #bbb;
 	text-transform: uppercase;
-	letter-spacing: 1px;
+	letter-spacing: 1.5px;
 	display: inline-block;
 	-webkit-transition: all .3s ease-in-out;
 	transition: all .3s ease-in-out;
@@ -331,7 +331,7 @@ Project
 }
 
 .project-img-wrapper img {
-	margin-bottom: 10px;
+	margin-bottom: 50px;
 }
 
 .project hr {
@@ -424,7 +424,6 @@ Konami
 	-webkit-transform: rotate(360deg);
 	        transform: rotate(360deg);
 }
-
 
 
 /* ----------------------------------------
