@@ -13,20 +13,6 @@ body {
 	word-spacing: .4px;
 }
 
-body.thank-you-page {
-	background-color: black;
-	color: white;
-	text-align: center;
-}
-
-.thank-you-page a {
-	color: white;
-}
-
-.thank-you-page h2 {
-	margin-top: 300px;
-}
-
 img {
 	display: block;
 	max-width: 100%;
@@ -432,6 +418,27 @@ footer i:hover {
 	-webkit-transform: scale(1.15);
 	        transform: scale(1.15);
 }
+
+
+/* ----------------------------------------
+Thank You Page
+------------------------------------------- */
+
+
+body.thank-you-page {
+	background-color: black;
+	color: white;
+	text-align: center;
+}
+
+.thank-you-page a {
+	color: white;
+}
+
+.thank-you-page h2 {
+	margin-top: 300px;
+}
+
 
 /* ----------------------------------------
 Konami
