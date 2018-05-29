@@ -1,11 +1,10 @@
+<IfModule mod_rewrite.c>
 RewriteEngine On
-
-Options FollowSymLinks
-AllowOverride All
-
+Options +FollowSymLinks
+RewriteBase /
+RewriteRule ^index\.html$ - [L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-
-RewriteRule ^index/?$ index.html 
-RewriteRule ^yesware/?$ yesware.html
+RewriteRule . /index.html [L]
+</IfModule>
 
