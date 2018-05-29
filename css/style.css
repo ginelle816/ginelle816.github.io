@@ -503,7 +503,7 @@ Media Styles
 		color: #999;
 		-webkit-transition: all .3s ease-in-out;
 		transition: all .3s ease-in-out;
-		margin: 0 auto;
+		margin: 10px auto 0 auto;
 	}
 
 	.hamburger:hover {
