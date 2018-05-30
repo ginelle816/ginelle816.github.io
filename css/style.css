@@ -446,14 +446,6 @@ body.thank-you-page {
 }
 
 
-
-#dropdown li {
-		display: block;
-		text-align: center;
-		padding: 10px 0; 
-	}
-
-
 /* ----------------------------------------
 Konami
 ------------------------------------------- */
@@ -515,8 +507,10 @@ Media Styles
 		margin: 0 auto;
 	}
 
-	nav ul {
-		display: none;
+	#dropdown li {
+		display: block;
+		text-align: center;
+		padding: 10px 0; 
 	}
 
 }
