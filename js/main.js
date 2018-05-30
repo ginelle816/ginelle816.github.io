@@ -112,7 +112,7 @@ $('form').on('submit', function (e) {
 		// Change button message temporarily
 	    var that = this;
 	    var text = $(this).html();
-	    $('form button').html("&#x2713; Sending...");
+	    $('form button').html("Sending...");
 	    setTimeout(function(){
 	        //fade back
 	        $(that).html(text);
