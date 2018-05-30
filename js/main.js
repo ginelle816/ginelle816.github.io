@@ -79,11 +79,11 @@ $('form').on('submit', function (e) {
 	// Prevent the page from refreshing
 	e.preventDefault();
 
-	var fullName = $('#nameInput').val();
+	// var fullName = $('#nameInput').val();
 
-	var email = $('#emailInput').val();
+	// var email = $('#emailInput').val();
 
-	var message = $('#messageInput').val();
+	// var message = $('#messageInput').val();
 	
 	// // If name is blank show. error, if not remove .error
 	// if (fullName === "") {
