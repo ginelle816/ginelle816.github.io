@@ -133,33 +133,27 @@ nav li a,
 
 nav li a:hover,
 .navigate a:hover {
-	@media all and (min-width: 900px) {
-		color: black;
-		font-size: 12px;
-	}
+	color: black;
+	font-size: 12px;
 }
 
 nav li a:after,
 .navigate a:after {
-	@media all and (min-width: 900px) {
-		display:block;
-		content: '';
-		border-bottom: solid 1px black;  
-		-webkit-transform: scaleX(0.0001);  
-		        transform: scaleX(0.0001);  
-		-webkit-transition: -webkit-transform .3s ease-in-out;  
-		transition: -webkit-transform .3s ease-in-out;  
-		transition: transform .3s ease-in-out;  
-		transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out;
-	}
+	display:block;
+	content: '';
+	border-bottom: solid 1px black;  
+	-webkit-transform: scaleX(0.0001);  
+	        transform: scaleX(0.0001);  
+	-webkit-transition: -webkit-transform .3s ease-in-out;  
+	transition: -webkit-transform .3s ease-in-out;  
+	transition: transform .3s ease-in-out;  
+	transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out;
 }
 
 nav a:hover:after,
 .navigate a:hover:after {
-	@media all and (min-width: 900px) {
-		-webkit-transform: scaleX(1);
-		        transform: scaleX(1);
-	}
+	-webkit-transform: scaleX(1);
+	        transform: scaleX(1);
 }
 
 .hamburger {
