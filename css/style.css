@@ -462,13 +462,13 @@ Media Styles
 		margin: 0 auto;
 	}
 
-	.overlay {
-		display: none!important;
-	}
-
 }
 
 @media only screen and (max-width: 500px) {
+
+	.overlay, .overlay .large-text, .overlay hr, .overlay .small-text {
+		display: none!important;
+	}
 
 	#about {
 		width: 100%;
