@@ -76,8 +76,6 @@ $(document).ready(function(){
 
 // Do it when someone submits the form
 $('form').on('submit', function (e) {
-	// Prevent the page from refreshing
-	// e.preventDefault();
 
 	var fullName = $('#nameInput').val();
 
@@ -127,10 +125,19 @@ $('form').on('submit', function (e) {
 	   $(this).removeClass('error');
 	});
 
-  if ($(this).valid()) {  //<<< I was missing this check
-    $("#loading").show();
-  }
+});
 
+// Validate form
+$('form').validate({ // initialize the plugin
+    rules: {
+        name: {
+            required: true,
+        },
+        email: {
+            required: true,
+            email: true
+        }
+    }
 });
 
 
