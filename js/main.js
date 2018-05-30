@@ -116,7 +116,7 @@ $('form').on('submit', function (e) {
 	    setTimeout(function(){
 	        //fade back
 	        $(that).html(text);
-	    }, 1000);
+	    }, 500);
 
 		// Reset the form
 		$('form').trigger('reset');
