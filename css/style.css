@@ -507,21 +507,6 @@ Media Styles
 		margin: 0 auto;
 	}
 
-	.hamburger {
-		display: block;
-		text-align: center;
-		text-decoration: none;
-		color: #ccc;
-		-webkit-transition: all .3s ease-in-out;
-		transition: all .3s ease-in-out;
-		margin: 10px auto 0 auto;
-	}
-
-	.hamburger:hover {
-		-webkit-transform: scale(1.15);
-	        transform: scale(1.15);
-	}
-
 	nav ul {
 		display: none;
 	}
