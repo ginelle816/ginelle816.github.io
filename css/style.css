@@ -118,8 +118,7 @@ nav li {
 	padding-left: 30px;
 }
 
-nav li a,
-.navigate a {
+nav li a {
 	font-size: 11px;
 	line-height: 20px;
 	text-decoration: none;
@@ -131,14 +130,12 @@ nav li a,
 	transition: all .3s ease-in-out;
 }
 
-nav li a:hover,
-.navigate a:hover {
+nav li a:hover {
 	color: black;
 	font-size: 12px;
 }
 
-nav li a:after,
-.navigate a:after {
+nav li a:after {
 	display:block;
 	content: '';
 	border-bottom: solid 1px black;  
@@ -150,8 +147,7 @@ nav li a:after,
 	transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out;
 }
 
-nav a:hover:after,
-.navigate a:hover:after {
+nav a:hover:after {
 	-webkit-transform: scaleX(1);
 	        transform: scaleX(1);
 }
@@ -353,22 +349,6 @@ Project
 	margin: 2px auto 7px auto;
 }
 
-.navigate {
-	padding: 8px;
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-orient: horizontal;
-	-webkit-box-direction: normal;
-	    -ms-flex-direction: row;
-	        flex-direction: row;
-	-webkit-box-pack: justify;
-	    -ms-flex-pack: justify;
-	        justify-content: space-between;
-	-ms-flex-flow: row wrap; 
-	    flex-flow: row wrap;
-}
-
 
 /* ----------------------------------------
 Footer
@@ -448,7 +428,7 @@ body.form-thank-you {
 .form-thank-you section {
 	width: 100%!important;
 	position: absolute!important;
-	top: 43%!important;
+	top: 40%!important;
 }
 
 
@@ -513,10 +493,15 @@ Media Styles
 		margin: 0 auto;
 	}
 
+	nav li a {
+		font-size: 12px;
+		line-height: 20px;
+	}
+
 	#dropdown li {
 		display: block;
 		text-align: center;
-		padding: 10px 0 5px 0; 
+		padding: 10px 0 0 0; 
 	}
 
 }
