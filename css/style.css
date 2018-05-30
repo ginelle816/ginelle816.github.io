@@ -468,6 +468,7 @@ Media Styles
 
 	.overlay, .overlay .large-text, .overlay hr, .overlay .small-text {
 		display: none!important;
+		visibility: hidden!important;
 	}
 
 	#about {
