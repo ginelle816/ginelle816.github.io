@@ -57,10 +57,10 @@ $(document).ready(function(){
       var hash = this.hash;
 
       // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (600) specifies the number of milliseconds it takes to scroll to the specified area
+      // The optional number (500) specifies the number of milliseconds it takes to scroll to the specified area
       $('html, body').animate({
         scrollTop: $(hash).offset().top
-      }, 600, function(){
+      }, 500, function(){
    
         // Add hash (#) to URL when done scrolling (default click behavior)
         window.location.hash = hash;
@@ -69,81 +69,65 @@ $(document).ready(function(){
   });
 });
 
-// // Do it when someone clicks a nav link
-// $('.smooth-scroll').on('click', function(e) {
-//   // prevent the standard link operation on click
-//   e.preventDefault();
-//   // use the href of the link to identify what
-//   // section to scroll to
-//   var thisTarget = $(this).attr('href');
-//   // get that section's top offset
-//   var targetOffset = $(thisTarget).offset().top;
-//   // use jQuery.animate() to animate the body's
-//   // scrollTop to the targetOffest
-//   $('body').animate({
-//     scrollTop: targetOffset
-//   }, 600);
-// });
 
 
 
+// Form!
 
-// // Form!
+// Do it when someone submits the form
+$('form').on('submit', function (e) {
+	// Prevent the page from refreshing
+	e.preventDefault();
 
-// // Do it when someone submits the form
-// $('form').on('submit', function (e) {
-// 	// Prevent the page from refreshing
-// 	e.preventDefault();
+	var fullName = $('#nameInput').val();
 
-// 	var fullName = $('#nameInput').val();
+	var email = $('#emailInput').val();
 
-// 	var email = $('#emailInput').val();
-
-// 	var message = $('#messageInput').val();
+	var message = $('#messageInput').val();
 	
-// 	// If name is blank show. error, if not remove .error
-// 	if (fullName === "") {
-// 		$('#nameInput').addClass('error');
-// 	} else {
-// 		$('#nameInput').removeClass('error');
-// 	}
+	// If name is blank show. error, if not remove .error
+	if (fullName === "") {
+		$('#nameInput').addClass('error');
+	} else {
+		$('#nameInput').removeClass('error');
+	}
 
-// 	// If email is blank show. error, if not remove .error
-// 	if (email === "") {
-// 		$('#emailInput').addClass('error');
-// 	} else {
-// 		$('#emailInput').removeClass('error');
-// 	}
+	// If email is blank show. error, if not remove .error
+	if (email === "") {
+		$('#emailInput').addClass('error');
+	} else {
+		$('#emailInput').removeClass('error');
+	}
 
-// 	// If message is blank show. error, if not remove .error
-// 	if (message === "") {
-// 		$('#messageInput').addClass('error');
-// 	} else {
-// 		$('#messageInput').removeClass('error');
-// 	}
+	// If message is blank show. error, if not remove .error
+	if (message === "") {
+		$('#messageInput').addClass('error');
+	} else {
+		$('#messageInput').removeClass('error');
+	}
 
-// 	// If all fields are filled
-// 	if (fullName === "",email === "",message === "") {
-// 	} else {
-// 		// Change button message temporarily
-// 	    var that = this;
-// 	    var text = $(this).html();
-// 	    $('form button').html("&#x2713; You're all set!");
-// 	    setTimeout(function(){
-// 	        //fade back
-// 	        $(that).html(text);
-// 	    }, 5000);
+	// If all fields are filled
+	if (fullName === "",email === "",message === "") {
+	} else {
+		// Change button message temporarily
+	    var that = this;
+	    var text = $(this).html();
+	    $('form button').html("&#x2713; You're all set!");
+	    setTimeout(function(){
+	        //fade back
+	        $(that).html(text);
+	    }, 5000);
 
-// 		// Reset the form
-// 		$('form').trigger('reset');
-// 	}
+		// Reset the form
+		$('form').trigger('reset');
+	}
 
-// 	// If user starts typing in a field with .error, remove .error
-// 	$(document).on('keyup', 'input.error,textarea.error', function(){
-// 	    $(this).removeClass('error');
-// 	});
+	// // If user starts typing in a field with .error, remove .error
+	// $(document).on('keyup', 'input.error,textarea.error', function(){
+	//     $(this).removeClass('error');
+	// });
 
-// });
+});
 
 
 
