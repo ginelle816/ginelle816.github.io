@@ -77,7 +77,7 @@ $(document).ready(function(){
 // Do it when someone submits the form
 $('form').on('submit', function (e) {
 	// Prevent the page from refreshing
-	e.preventDefault();
+	// e.preventDefault();
 
 	// var fullName = $('#nameInput').val();
 
