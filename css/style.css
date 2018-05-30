@@ -63,6 +63,10 @@ h3 {
 	line-height: 24px;
 }
 
+.center-text {
+	text-align: center;
+}
+
 /* ----------------------------------------
 Header
 ------------------------------------------- */
@@ -353,6 +357,13 @@ Project
 	background-color: black;
 	width: 100px;
 	margin: 7px auto 7px auto;
+}
+
+.back {
+	text-align: center;
+	font-size: 14px;
+	color: #aaa;
+	text-decoration: none;
 }
 
 
