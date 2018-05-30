@@ -150,7 +150,7 @@ nav li a:after,
 	transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out;
 }
 
-nav:hover:after,
+nav a:hover:after,
 .navigate a:hover:after {
 	-webkit-transform: scaleX(1);
 	        transform: scaleX(1);
