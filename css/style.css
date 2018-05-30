@@ -135,6 +135,10 @@ nav li a:hover,
 .navigate a:hover {
 	color: black;
 	font-size: 12px;
+
+	@media (hover: none) {
+	    nav li a:hover, .navigate a:hover { color: inherit; }
+	}
 }
 
 nav li a:after,
@@ -469,19 +473,6 @@ Media Styles
 	.overlay, .overlay .large-text, .overlay hr, .overlay .small-text {
 		display: none;
 		visibility: hidden;
-	}
-
-	nav li a:hover,
-	.navigate a:hover {
-		font-size: 11px;
-		line-height: 20px;
-		text-decoration: none;
-		color: #bbb;
-		text-transform: uppercase;
-		letter-spacing: 1.5px;
-		display: inline-block;
-		-webkit-transition: none;
-		transition: none;
 	}
 
 	#about {
