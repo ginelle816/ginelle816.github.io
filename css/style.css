@@ -131,7 +131,7 @@ nav li a,
 	transition: all .3s ease-in-out;
 }
 
-nav li a:hover,
+/*nav li a:hover,
 .navigate a:hover {
 	color: black;
 	font-size: 12px;
@@ -154,7 +154,7 @@ nav a:hover:after,
 .navigate a:hover:after {
 	-webkit-transform: scaleX(1);
 	        transform: scaleX(1);
-}
+}*/
 
 .hamburger {
 	display: none;
