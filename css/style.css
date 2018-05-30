@@ -174,7 +174,7 @@ button {
 	word-spacing: .4px!important;
 	cursor: pointer;
 	outline: 0;
-	border: 2px solid white;
+	border: 2px solid #bbb;
 	color: white;
 	padding: 8px 45px 9px 45px;
 	background-color: transparent;
@@ -186,7 +186,7 @@ button {
 }
 
 button:hover {
-	background-color: white;
+	background-color: #bbb;
 	color: black;
 	-webkit-transform: scale(1.04);
 	        transform: scale(1.04);
