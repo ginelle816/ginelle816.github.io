@@ -85,12 +85,12 @@ $('form').on('submit', function (e) {
 
 	var message = $('#messageInput').val();
 	
-	// If name is blank show. error, if not remove .error
-	if (fullName === "") {
-		$('#nameInput').addClass('error');
-	} else {
-		$('#nameInput').removeClass('error');
-	}
+	// // If name is blank show. error, if not remove .error
+	// if (fullName === "") {
+	// 	$('#nameInput').addClass('error');
+	// } else {
+	// 	$('#nameInput').removeClass('error');
+	// }
 
 	// // If email is blank show. error, if not remove .error
 	// if (email === "") {
