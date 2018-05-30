@@ -467,8 +467,8 @@ Media Styles
 @media only screen and (max-width: 500px) {
 
 	.overlay, .overlay .large-text, .overlay hr, .overlay .small-text {
-		display: none!important;
-		visibility: hidden!important;
+		display: none;
+		visibility: hidden;
 	}
 
 	#about {
