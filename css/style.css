@@ -80,7 +80,7 @@ header .header-container {
 	-webkit-box-direction: normal;
 	    -ms-flex-direction: row;
 	        flex-direction: row;
-	margin: 0 auto;
+	margin: 0 auto 50px auto;
 	-webkit-box-pack: justify;
 	    -ms-flex-pack: justify;
 	        justify-content: space-between;
@@ -245,7 +245,7 @@ Gallery
 
 .gallery {
 	max-width: 1000px;
-	margin: 50px auto 0 auto;
+	margin: 0 auto;
 }
 
 .grid-wrapper img { 
@@ -454,14 +454,6 @@ Konami
 /* ----------------------------------------
 Media Styles
 ------------------------------------------- */
-
-@media only screen and (max-width: 800px) {
-	
-	.gallery {
-		margin: 0 auto;
-	}
-
-}
 
 @media only screen and (max-width: 500px) {
 
