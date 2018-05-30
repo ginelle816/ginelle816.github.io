@@ -68,6 +68,7 @@ Header
 ------------------------------------------- */
 
 header {
+	background-color: #eee;
 	max-width: 984px;
 	display: -webkit-box;
 	display: -ms-flexbox;
