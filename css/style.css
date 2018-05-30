@@ -505,15 +505,15 @@ Media Styles
 		display: block;
 		text-align: center;
 		text-decoration: none;
-		color: #ddd;
+		color: #ccc;
 		-webkit-transition: all .3s ease-in-out;
 		transition: all .3s ease-in-out;
 		margin: 10px auto 0 auto;
 	}
 
 	.hamburger:hover {
-		-webkit-transform: scale(1.06);
-	        transform: scale(1.06);
+		-webkit-transform: scale(1.08);
+	        transform: scale(1.08);
 	}
 
 	nav ul {
