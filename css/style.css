@@ -135,8 +135,6 @@ nav li a:hover,
 .navigate a:hover {
 	color: black;
 	font-size: 12px;
-
-	@media (hover: none)
 }
 
 nav li a:after,
