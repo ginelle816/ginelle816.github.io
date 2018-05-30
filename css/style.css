@@ -68,7 +68,6 @@ Header
 ------------------------------------------- */
 
 header {
-	background-color: #eee;
 	max-width: 984px;
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -124,7 +123,7 @@ nav li a,
 	font-size: 11px;
 	line-height: 20px;
 	text-decoration: none;
-	color: #bbb;
+	color: #aaa;
 	text-transform: uppercase;
 	letter-spacing: 1.5px;
 	display: inline-block;
