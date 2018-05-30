@@ -68,6 +68,10 @@ Header
 ------------------------------------------- */
 
 header {
+	background-color: #f7f7f7;
+}
+
+header .header-container {
 	max-width: 984px;
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -80,12 +84,12 @@ header {
 	-webkit-box-pack: justify;
 	    -ms-flex-pack: justify;
 	        justify-content: space-between;
-	padding: 35px 10px 20px 10px; 
+	padding: 27px 10px 28px 10px; 
 	-ms-flex-flow: row wrap; 
 	    flex-flow: row wrap;
 }
 
-header img {
+header .header-container img {
 	width: 250px;
 	/*-webkit-transition: all .3s ease-in-out;
 	transition: all .3s ease-in-out;*/
@@ -111,6 +115,8 @@ nav {
 
 nav ul {
 	-webkit-padding-start: 0;
+	-webkit-margin-after: 0;
+	-webkit-margin-before: 0;
 }
 
 nav li {
@@ -239,7 +245,7 @@ Gallery
 
 .gallery {
 	max-width: 1000px;
-	margin: 0 auto 100px auto;
+	margin: 50px auto 50px auto;
 }
 
 .grid-wrapper img { 
@@ -329,7 +335,7 @@ Project
 .project {
 	max-width: 800px;
 	text-align: center;
-	margin: 22px auto 100px auto;
+	margin: 45px auto 100px auto;
 	padding: 8px;
 }
 
