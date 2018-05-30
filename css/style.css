@@ -127,9 +127,34 @@ nav li a,
 	text-transform: uppercase;
 	letter-spacing: 1.5px;
 	display: inline-block;
+	-webkit-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
 }
 
+nav li a:hover,
+.navigate a:hover {
+	color: black;
+	font-size: 12px;
+}
 
+nav li a:after,
+.navigate a:after {
+	display:block;
+	content: '';
+	border-bottom: solid 1px black;  
+	-webkit-transform: scaleX(0.0001);  
+	        transform: scaleX(0.0001);  
+	-webkit-transition: -webkit-transform .3s ease-in-out;  
+	transition: -webkit-transform .3s ease-in-out;  
+	transition: transform .3s ease-in-out;  
+	transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out;
+}
+
+nav a:hover:after,
+.navigate a:hover:after {
+	-webkit-transform: scaleX(1);
+	        transform: scaleX(1);
+}
 
 .hamburger {
 	display: none;
