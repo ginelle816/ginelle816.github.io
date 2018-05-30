@@ -171,8 +171,8 @@ Buttons
 button {
 	cursor: pointer;
 	outline: 0;
-	border: 2px solid #ffffff;
-	color: #44545E;
+	border: 2px solid white;
+	color: white;
 	padding: 8px 45px;
 	background-color: transparent;
 	font-weight: 600;
@@ -184,7 +184,7 @@ button {
 }
 
 button:hover {
-	background-color: #white;
+	background-color: white;
 	color: black;
 	-webkit-transform: scale(1.04);
 	        transform: scale(1.04);
