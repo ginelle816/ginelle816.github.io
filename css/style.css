@@ -432,23 +432,23 @@ Thank You Page
 
 
 body.form-thank-you {
-	background-color: black;
-	color: white;
-	text-align: center;
+	background-color: black!important;
+	color: white!important;
+	text-align: center!important;
 }
 
 .form-thank-you a {
-	color: white;
+	color: white!important;
 }
 
 .form-thank-you h2 {
-	margin-bottom: 20px;
+	margin-bottom: 20px!important;
 }
 
 .form-thank-you section {
-	width: 100%;
-	position: absolute;
-	top: 43%;
+	width: 100%!important;
+	position: absolute!important;
+	top: 43%!important;
 }
 
 
