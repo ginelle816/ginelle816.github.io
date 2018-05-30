@@ -23,8 +23,6 @@ $(document).ready(function() {
 
 // Do it when someone clicks on the hamburger icon
 $('.hamburger').on('click', function (e) {
-	// prevent the standard link operation on click
-	e.preventDefault();
 	// Slide toggle the menu (#dropdown)
     $('#dropdown').slideToggle(300);
     // Bonus: If the user clicks anywhere outside of the menu slide the menu up
