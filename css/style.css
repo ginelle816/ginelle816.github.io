@@ -136,9 +136,7 @@ nav li a:hover,
 	color: black;
 	font-size: 12px;
 
-	@media (hover: none) {
-	    nav li a:hover, .navigate a:hover { color: inherit; }
-	}
+	@media (hover: none)
 }
 
 nav li a:after,
@@ -154,7 +152,7 @@ nav li a:after,
 	transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out;
 }
 
-nav a:hover:after,
+nav:hover:after,
 .navigate a:hover:after {
 	-webkit-transform: scaleX(1);
 	        transform: scaleX(1);
