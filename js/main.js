@@ -122,27 +122,6 @@ $('nav a').on('click', function(e) {
 
 
 
-// Removes hover effects on mobile
-
-(function () {
-    'use strict';
-
-    if (!('addEventListener' in window)) {
-        return;
-    }
-
-    var htmlElement = document.querySelector('.overlay-hover');
-
-    function touchStart () {
-        htmlElement.classList.remove('overlay-hover');
-
-        htmlElement.removeEventListener('touchstart', touchStart);
-    }
-
-    htmlElement.addEventListener('touchstart', touchStart);
-}());
-
-
 // KONAMI!
 
 var kkeys = [];
