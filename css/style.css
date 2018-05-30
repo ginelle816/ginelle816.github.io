@@ -361,6 +361,10 @@ Project
 
 .back {
 	text-align: center;
+	margin-bottom: 50px;
+}
+
+.back a {
 	font-size: 16px;
 	color: #aaa;
 	text-decoration: none;
