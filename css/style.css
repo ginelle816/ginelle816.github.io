@@ -471,6 +471,19 @@ Media Styles
 		visibility: hidden;
 	}
 
+	nav li a:hover,
+	.navigate a:hover {
+		font-size: 11px;
+		line-height: 20px;
+		text-decoration: none;
+		color: #bbb;
+		text-transform: uppercase;
+		letter-spacing: 1.5px;
+		display: inline-block;
+		-webkit-transition: none;
+		transition: none;
+	}
+
 	#about {
 		width: 100%;
 	}
@@ -493,7 +506,7 @@ Media Styles
 	}
 
 	.logo img {
-		margin: 0 auto 20px auto;
+		margin: 0 auto 18px auto;
 	}
 
 	nav {
