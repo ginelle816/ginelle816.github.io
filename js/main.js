@@ -92,35 +92,35 @@ $('form').on('submit', function (e) {
 		$('#nameInput').removeClass('error');
 	}
 
-	// If email is blank show. error, if not remove .error
-	if (email === "") {
-		$('#emailInput').addClass('error');
-	} else {
-		$('#emailInput').removeClass('error');
-	}
+	// // If email is blank show. error, if not remove .error
+	// if (email === "") {
+	// 	$('#emailInput').addClass('error');
+	// } else {
+	// 	$('#emailInput').removeClass('error');
+	// }
 
-	// If message is blank show. error, if not remove .error
-	if (message === "") {
-		$('#messageInput').addClass('error');
-	} else {
-		$('#messageInput').removeClass('error');
-	}
+	// // If message is blank show. error, if not remove .error
+	// if (message === "") {
+	// 	$('#messageInput').addClass('error');
+	// } else {
+	// 	$('#messageInput').removeClass('error');
+	// }
 
-	// If all fields are filled
-	if (fullName === "",email === "",message === "") {
-	} else {
-		// Change button message temporarily
-	    var that = this;
-	    var text = $(this).html();
-	    $('form button').html("&#x2713; You're all set!");
-	    setTimeout(function(){
-	        //fade back
-	        $(that).html(text);
-	    }, 5000);
+	// // If all fields are filled
+	// if (fullName === "",email === "",message === "") {
+	// } else {
+	// 	// Change button message temporarily
+	//     var that = this;
+	//     var text = $(this).html();
+	//     $('form button').html("&#x2713; You're all set!");
+	//     setTimeout(function(){
+	//         //fade back
+	//         $(that).html(text);
+	//     }, 5000);
 
-		// Reset the form
-		$('form').trigger('reset');
-	}
+	// 	// Reset the form
+	// 	$('form').trigger('reset');
+	// }
 
 	// // If user starts typing in a field with .error, remove .error
 	// $(document).on('keyup', 'input.error,textarea.error', function(){
