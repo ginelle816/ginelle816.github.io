@@ -186,7 +186,7 @@ button {
 }
 
 button:hover {
-	background-color: #bbb;
+	background-color: #aaa;
 	color: black;
 	-webkit-transform: scale(1.04);
 	        transform: scale(1.04);

@@ -124,8 +124,12 @@ $('form').on('submit', function (e) {
 
 	// If user starts typing in a field with .error, remove .error
 	$(document).on('keyup', 'input.error,textarea.error', function(){
-	    $(this).removeClass('error');
+	   $(this).removeClass('error');
 	});
+
+  if ($(this).valid()) {  //<<< I was missing this check
+    $("#loading").show();
+  }
 
 });
 
