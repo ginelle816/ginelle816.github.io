@@ -133,27 +133,34 @@ nav li a,
 
 nav li a:hover,
 .navigate a:hover {
-	color: black;
-	font-size: 12px;
+
+	@media only screen and (max-width: 500px) {
+		color: black;
+		font-size: 12px;
+	}
 }
 
 nav li a:after,
 .navigate a:after {
-	display:block;
-	content: '';
-	border-bottom: solid 1px black;  
-	-webkit-transform: scaleX(0.0001);  
-	        transform: scaleX(0.0001);  
-	-webkit-transition: -webkit-transform .3s ease-in-out;  
-	transition: -webkit-transform .3s ease-in-out;  
-	transition: transform .3s ease-in-out;  
-	transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out;
+	@media only screen and (max-width: 500px) {
+		display:block;
+		content: '';
+		border-bottom: solid 1px black;  
+		-webkit-transform: scaleX(0.0001);  
+		        transform: scaleX(0.0001);  
+		-webkit-transition: -webkit-transform .3s ease-in-out;  
+		transition: -webkit-transform .3s ease-in-out;  
+		transition: transform .3s ease-in-out;  
+		transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out;
+	}
 }
 
 nav a:hover:after,
 .navigate a:hover:after {
-	-webkit-transform: scaleX(1);
-	        transform: scaleX(1);
+	@media only screen and (max-width: 500px) {
+		-webkit-transform: scaleX(1);
+		        transform: scaleX(1);
+	}
 }
 
 .hamburger {
@@ -505,7 +512,7 @@ Media Styles
 		display: block;
 		text-align: center;
 		text-decoration: none;
-		color: #999;
+		color: #ccc;
 		-webkit-transition: all .3s ease-in-out;
 		transition: all .3s ease-in-out;
 		margin: 10px auto 0 auto;
