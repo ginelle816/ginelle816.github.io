@@ -72,91 +72,93 @@ $(document).ready(function(){
 
 
 
-// Form!
+// // Form!
 
-// Do it when someone submits the form
-$('form').on('submit', function (e) {
+// // Do it when someone submits the form
+// $('form').on('submit', function (e) {
 
-	var fullName = $('#nameInput').val();
+// 	var fullName = $('#nameInput').val();
 
-	var email = $('#emailInput').val();
+// 	var email = $('#emailInput').val();
 
-	var message = $('#messageInput').val();
+// 	var message = $('#messageInput').val();
 	
-	// If name is blank show. error, if not remove .error
-	if (fullName === "") {
-		$('#nameInput').addClass('error');
-	} else {
-		$('#nameInput').removeClass('error');
-	}
+// 	// If name is blank show. error, if not remove .error
+// 	if (fullName === "") {
+// 		$('#nameInput').addClass('error');
+// 	} else {
+// 		$('#nameInput').removeClass('error');
+// 	}
 
-	// If email is blank show. error, if not remove .error
-	if (email === "") {
-		$('#emailInput').addClass('error');
-	} else {
-		$('#emailInput').removeClass('error');
-	}
+// 	// If email is blank show. error, if not remove .error
+// 	if (email === "") {
+// 		$('#emailInput').addClass('error');
+// 	} else {
+// 		$('#emailInput').removeClass('error');
+// 	}
 
-	// If message is blank show. error, if not remove .error
-	if (message === "") {
-		$('#messageInput').addClass('error');
-	} else {
-		$('#messageInput').removeClass('error');
-	}
+// 	// If message is blank show. error, if not remove .error
+// 	if (message === "") {
+// 		$('#messageInput').addClass('error');
+// 	} else {
+// 		$('#messageInput').removeClass('error');
+// 	}
 
-	// If all fields are filled
-	if (fullName === "",email === "",message === "") {
-	} else {
-		// Change button message temporarily
-	    var that = this;
-	    var text = $(this).html();
-	    $('form button').html("Sending...");
-	    setTimeout(function(){
-	        //fade back
-	        $(that).html(text);
-	    }, 500);
+// 	// If all fields are filled
+// 	if (fullName === "",email === "",message === "") {
+// 	} else {
+// 		// Change button message temporarily
+// 	    var that = this;
+// 	    var text = $(this).html();
+// 	    $('form button').html("Sending...");
+// 	    setTimeout(function(){
+// 	        //fade back
+// 	        $(that).html(text);
+// 	    }, 500);
 
-		// Reset the form
-		$('form').trigger('reset');
-	}
+// 		// Reset the form
+// 		$('form').trigger('reset');
+// 	}
 
-	// If user starts typing in a field with .error, remove .error
-	$(document).on('keyup', 'input.error,textarea.error', function(){
-	   $(this).removeClass('error');
-	});
+// 	// If user starts typing in a field with .error, remove .error
+// 	$(document).on('keyup', 'input.error,textarea.error', function(){
+// 	   $(this).removeClass('error');
+// 	});
 
-});
+// });
 
-// Form validation
-$(function() {
-  // Initialize form validation on the registration form.
-  // It has the name attribute "registration"
-  $("form[name='contact']").validate({
-    // Specify validation rules
-    rules: {
-      // The key name on the left side is the name attribute
-      // of an input field. Validation rules are defined
-      // on the right side
-      name: "required",
-      email: {
-        required: true,
-        // Specify that email should be validated
-        // by the built-in "email" rule
-        email: true
-      }
-    },
-    // Specify validation error messages
-    messages: {
-      name: "Please enter your firstname",
-      email: "Please enter a valid email address"
-    },
-    // Make sure the form is submitted to the destination defined
-    // in the "action" attribute of the form when valid
-    submitHandler: function(form) {
-      form.submit();
-    }
-  });
-});
+// // Form validation
+// $(function() {
+//   // Initialize form validation on the registration form.
+//   // It has the name attribute "registration"
+//   $("form[name='contact']").validate({
+//     // Specify validation rules
+//     rules: {
+//       // The key name on the left side is the name attribute
+//       // of an input field. Validation rules are defined
+//       // on the right side
+//       name: "required",
+//       email: {
+//         required: true,
+//         // Specify that email should be validated
+//         // by the built-in "email" rule
+//         email: true
+//       }
+//     },
+//     // Specify validation error messages
+//     messages: {
+//       name: "Please enter your firstname",
+//       email: "Please enter a valid email address"
+//     },
+//     // Make sure the form is submitted to the destination defined
+//     // in the "action" attribute of the form when valid
+//     submitHandler: function(form) {
+//       form.submit();
+//     }
+//   });
+// });
+
+
 
 
 // KONAMI!
