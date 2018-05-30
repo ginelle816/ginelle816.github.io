@@ -493,7 +493,7 @@ Media Styles
 	}
 
 	.logo img {
-		margin: 0 auto 15px auto;
+		margin: 0 auto 20px auto;
 	}
 
 	nav {
@@ -512,8 +512,8 @@ Media Styles
 	}
 
 	.hamburger:hover {
-		-webkit-transform: scale(1.08);
-	        transform: scale(1.08);
+		-webkit-transform: scale(1.15);
+	        transform: scale(1.15);
 	}
 
 	nav ul {
