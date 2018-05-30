@@ -192,6 +192,10 @@ button:hover {
 Forms
 ------------------------------------------- */
 
+form {
+	font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
 input, textarea {
 	margin-bottom: 12px;
 	margin-right: 30px;
