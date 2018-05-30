@@ -124,10 +124,23 @@ $('nav a').on('click', function(e) {
 
 // Removes hover effects on mobile
 
-document.addEventListener('touchstart', function addtouchclass(e){ // first time user touches the screen
-    document.documentElement.classList.add('is-touch') // add "can-touch" class to document root using classList API
-    document.removeEventListener('touchstart', addtouchclass, false) // de-register touchstart event
-}, false)
+(function () {
+    'use strict';
+
+    if (!('addEventListener' in window)) {
+        return;
+    }
+
+    var htmlElement = document.querySelector('.overlay-hover');
+
+    function touchStart () {
+        htmlElement.classList.remove('overlay-hover');
+
+        htmlElement.removeEventListener('touchstart', touchStart);
+    }
+
+    htmlElement.addEventListener('touchstart', touchStart);
+}());
 
 
 // KONAMI!
