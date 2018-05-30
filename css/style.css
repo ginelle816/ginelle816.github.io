@@ -227,6 +227,7 @@ textarea::-webkit-input-placeholder {
 input:focus::-webkit-input-placeholder,
 textarea:focus::-webkit-input-placeholder {
 	color: black;
+	-webkit-transition: all .6s ease-in-out;
 	transition: all .6s ease-in-out;
 }
 
@@ -240,6 +241,7 @@ textarea,
 
 .error {
 	border: 2px solid #F95758;
+	-webkit-transition: all .3s ease-in-out;
 	transition: all .3s ease-in-out;
 }
 
